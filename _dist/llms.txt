@@ -1,0 +1,29 @@
+# Daily Riddle Words
+
+> An English daily word puzzle site with an original, browser-based five-letter guessing game, practical rules, strategy guides, and local streak statistics.
+
+## Primary page
+
+- [Daily Word Puzzle](https://gamehub.city/): Guess a five-letter word in six tries. Every guess receives green, gold, and gray letter feedback.
+
+## Content pages
+
+- [Daily puzzle](https://gamehub.city/daily/): The date-seeded puzzle, yesterday's answer, and local streak summary.
+- [Rules](https://gamehub.city/rules/): Guess requirements, duplicate-letter evaluation, tile colors, and keyboard states.
+- [Strategies](https://gamehub.city/strategies/): Starting words, vowel coverage, consonant patterns, position elimination, and double letters.
+- [Scoring](https://gamehub.city/scoring/): Win percentage, streaks, guess distribution, and browser storage.
+- [Word notes](https://gamehub.city/research/): How the answer and accepted-guess dictionaries are curated.
+- [Printable practice](https://gamehub.city/printable/): Offline five-letter deduction grids.
+- [Best starting words](https://gamehub.city/starting-words/): Vowel and consonant coverage, practical openers, two-word combinations, and position elimination.
+- [Streak strategy guide](https://gamehub.city/streak-guide/): Local streak tracking, conservative late-row decisions, pressure management, and distribution reading.
+- [Hard Mode rules and tactics](https://gamehub.city/hard-mode/): The voluntary clue constraint, differences from normal play, and tactical adjustments.
+- [Wordle feedback color patterns](https://gamehub.city/color-patterns/): More than 20 common green, gold, and gray patterns, example deductions, training methods, and duplicate-letter traps.
+- [About](https://gamehub.city/about/), [Editorial policy](https://gamehub.city/editorial-policy/), [Privacy](https://gamehub.city/privacy/), [Terms](https://gamehub.city/terms/), and [Contact](https://gamehub.city/contact/).
+
+## Key facts
+
+- The game engine is an original dependency-free JavaScript implementation.
+- More than 500 answer words and more than 2,000 accepted guesses are hardcoded in the site.
+- A deterministic date seed selects the same daily answer for every player.
+- Shared emoji grids do not reveal letters or the answer.
+- Results and streak data remain in localStorage and are not uploaded.

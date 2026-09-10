@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Endgame narrowing: closing from five candidates to one - Daily Riddle Words</title>
+<meta name="description" content="The last two rows decide most streaks. This guide covers candidate-set discipline, the "two-away" commit rule, and when to gamble.">
+<link rel="canonical" href="https://gamehub.city/strategy-lab/endgame-narrowing/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Endgame narrowing: closing from five candidates to one">
+<meta property="og:description" content="The last two rows decide most streaks. This guide covers candidate-set discipline, the "two-away" commit rule, and when to gamble.">
+<meta property="og:url" content="https://gamehub.city/strategy-lab/endgame-narrowing/">
+<meta property="og:locale" content="en_US">
+<link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/game.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Daily Riddle Words","url":"https://gamehub.city/","publisher":{"@type":"Organization","name":"Daily Riddle Words","logo":{"@type":"ImageObject","url":"https://gamehub.city/logo-512.png"}}},{"@type":"Article","headline":"Endgame narrowing: closing from five candidates to one","description":"The last two rows decide most streaks. This guide covers candidate-set discipline, the "two-away" commit rule, and when to gamble.","inLanguage":"en","author":{"@type":"Organization","name":"Daily Riddle Words editorial"},"isPartOf":{"@type":"WebSite","name":"Daily Riddle Words","url":"https://gamehub.city/"}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Main navigation"><a class="brand" href="/">Daily Riddle Words</a><div class="nav-links"><a href="/">Play</a><a href="/rules/">Rules</a><a href="/strategies/">Strategy</a><a href="/hints/">Hints</a><a href="/about/">About</a></div></nav>
+<main class="info-main" id="main">
+<p class="kicker">Strategy lab · deep dive</p>
+<h1>Endgame narrowing: closing from five candidates to one</h1>
+<p class="lead">The last two rows decide most streaks. This guide covers candidate-set discipline, the "two-away" commit rule, and when to gamble.</p>
+<h2>Counting the candidates</h2>
+<p>Endgame errors begin earlier than players think — on the row where the candidate pool is still wide but the board feels solved. From that row on, every guess should be scored by one question: how many remaining answers does this guess leave me if it misses? The answer-table habit from the frequency guide makes this countable in your head.</p>
+<p>You do not need the exact number. You need the ranking: which of my three candidate guesses cuts deepest? Players who feel the ranking instead of computing it reliably pick the word they want to be right, which is the exact opposite of the skill.</p>
+<h2>The two-away commit rule</h2>
+<p>Define "two-away" as: I have a leading candidate, and exactly one alternative I cannot rule out. At two-away, commit to the lead — spending a probe row to disambiguate converts a two-row guaranteed finish into a one-row coin flip plus a safety net that was never needed. The commit rule trades a small variance increase for a large expected-length decrease, and expected length is what streaks are made of.</p>
+<p>The rule has one exception: if the two candidates differ in a letter family you have not tested at all, one disambiguating probe with fresh letters often finishes both branches at once. Probe only when the probe is free.</p>
+<h2>Probe design</h2>
+<p>When a probe is genuinely needed, design it to test all live branches simultaneously. The strongest endgame probes use letters from the leading candidates in positions they have not occupied, while adding one untested high-frequency letter as a bonus. The probe that can only distinguish between your two favorites is worth less than one that also keeps a third branch alive.</p>
+<p>Probe aesthetics again: the best endgame probes are often non-words-people-know. That is fine. The board answers questions; it does not grade spelling bee performance.</p>
+<h2>The anatomy of a gamble</h2>
+<p>Sometimes the pool is five candidates, your row budget is two, and no probe covers the field. That is the true gamble case, and it has arithmetic. Guess the strongest candidate: you win now with probability one-fifth, and if you miss, you still hold full information from the miss. Expected rows: two. Probe first, then commit: often three. The gamble is correct more often than fear suggests — provided the miss genuinely teaches you everything about the four losers.</p>
+<p>Where players go wrong is gambling with partial information — committing while two candidates remain untested and the miss teaches nothing. The rule: gamble only when the gamble itself is informative.</p>
+<h2>Practice loop</h2>
+<p>The archive turns endgame practice into a solo sport: open any past day, read to hint level three only, then play out the endgame from that position. Ten minutes a day in the archive is worth more than ten live solves, because you see five times more distinct endgame shapes.</p>
+
++<h2>Worked board: reading a live example</h2>
++<p>Concrete boards beat abstract rules, so let us walk one shape end to end. Row one returns two yellows in slots 2 and 4 and nothing else. Under the pair plan, row two keeps no yellows in place, relocates both to their next common positions, and adds three untested top-eight letters. Suppose row two lands a green in slot 1 and a fresh yellow in slot 5.</p>
++<p>The candidate pool is now tiny — typically single digits on the measured bank. The endgame rule from our narrowing guide applies: enumerate the live candidates, check the two-away condition, and either commit or design one probe that covers both branches. Most boards of this shape finish in four rows with disciplined play, five with cautious play, and only drift to six when a yellow is mis-mapped along the way.</p>
++<h2>Worked board: the empty first row</h2>
++<p>The fully gray opener is the most instructive board in the game, because every letter of the guess is now excluded and the exclusion is worth more than players credit. With a five-distinct eliminator opener, a clean miss removes a large share of the bank at once. The correct emotional response is not disappointment but satisfaction: the search space just collapsed, and the pair plan's second guess now operates on a much smaller field.</p>
++<p>Play the second guess for coverage of what remains, not for exotic letters. The measured tables say the top-eight letters still dominate the survivor pool, so a miss on row one simply re-weights which of the familiar letters you test next. Players who reach for rare letters after an empty row are paying premium prices for information the common letters provide at a discount.</p>
+
++<h2>Reader questions, answered</h2>
++<p><strong>Does this strategy survive if the answer bank changes?</strong> Yes — the structure of the advice is to measure, not memorize. The tables regenerate from the live bank, and the decision rules (pair planning, mapping yellows, the two-away commit) are bank-independent. What shifts is the specific opener list, which is why the articles link to computed data rather than naming sacred words.</p>
++<p><strong>Should I use a solver instead?</strong> Solvers are excellent teachers and poor crutches. Play your own rows first, then run the same board through a solver and compare where your information usage diverged. The difference is usually a yellow you under-read or an untested letter family. Using the solver as the comparison rather than the answer is what makes it training.</p>
++<p><strong>How many days until this becomes automatic?</strong> Most players report the pair-plan reflex solidifying within two weeks of daily annotated play — the archive exists precisely to give you those reps with feedback. The endgame discipline takes longer, because narrow-board shapes arrive only a few times a week. Be patient with that one; it is also the highest-value layer.</p>
+
+<h2>Appendix: the measured bank at a glance</h2>
+<p>Reference numbers used throughout this guide, all computed from the current answer bank of 599 words.</p>
+<table class="answer-table"><caption>Answer-bank reference table</caption><tbody>
+<tr><th scope="row">Answer bank size</th><td>599 five-letter words</td></tr>
+<tr><th scope="row">Most common letters</th><td>E 50% · A 41% · S 41% · R 36% · T 34% · O 30% · I 28% · L 25%</td></tr>
+<tr><th scope="row">Commonest starting letters</th><td>S 14% · T 10% · C 8% · B 6% · F 6%</td></tr>
+<tr><th scope="row">Commonest ending letters</th><td>S 22% · E 16% · T 10% · D 9% · R 7%</td></tr>
+<tr><th scope="row">Answers containing a repeated letter</th><td>28%</td></tr>
+<tr><th scope="row">Letters seen in under 5% of answers</th><td>Z, Q, X, J, V</td></tr>
+<tr><th scope="row">Best coverage openers (guess list)</th><td>RATES 95% · TEARS 95% · RAISE 96%</td></tr>
+<tr><th scope="row">Best elimination openers</th><td>QUICK 45% · LUCKY 44% · YOUNG 38%</td></tr>
+</tbody></table>
+<h2>Appendix: how we compute coverage and elimination</h2>
+<p>Coverage is the share of answers that contain at least one letter of the guess — a proxy for "how often this guess tells me something." Elimination is its complement for pure-miss value: the share of answers ruled out when every tile comes back gray. Positional coverage, used in the opener tables, additionally requires the shared letter to sit in the same slot as in the guess, which is the stricter and more useful measure once greens matter.</p>
+<p>Three consequences worth internalizing. One: coverage and elimination are two sides of the same coin, so "safe" letters and "risky" letters describe the same property from opposite moods. Two: a five-distinct-letter guess strictly dominates any word with a repeat as an opener, because a repeated letter buys no extra information on row one. Three: opener quality saturates — beyond the top handful, differences of a percent or two are noise, and habit matters more than the last percent.</p>
+<h2>Appendix: a solved week, annotated</h2>
+<p>Take any seven consecutive days from the hint archive. For each day, reconstruct the decision sequence: what the board said after row one, which family the feedback activated, whether the second guess followed the pair plan, and where the finish came from. Seven days is enough to see your own pattern — most players discover they have one signature error that recurs two or three times a week, usually a mapping error on yellows or a premature commit against the two-away rule.</p>
+<p>The annotation habit matters more than the puzzles. Ten minutes with the archive, a written line per day, and a weekly look at the lines: that loop converts random play into training, and training is what a streak actually measures.</p>
+<h2>Appendix: when the advice runs out</h2>
+<p>Every guide on this site reduces uncertainty; none removes it. The bank contains words that behave unrepresentatively, boards that mislead, and days where the best plan loses to a well-read coin flip. When the advice runs out, the residual is variance, and variance is not a verdict on your play. The professional posture is the one poker players use: judge decisions by the information available when you made them, not by the tile colors that came back.</p>
+<p>That stance is also the honest summary of this lab. Measure the bank, plan the pair, read every tile, commit at two-away, annotate the misses — and accept the days the word simply wins.</p>
+<p><em>Every number in this article is computed from the site's own answer bank and refreshed when the bank changes — the same data the daily puzzle draws from.</em></p>
+<section class="related"><h2>Keep reading</h2><div class="content-links"><a href="/rules/">Rules</a><a href="/strategies/">Strategy guide</a><a href="/hints/">Hint archive</a><a href="/starting-words/">Starting words</a><a href="/scoring/">Streaks &amp; stats</a></div></section>
+</main>
+<footer class="site-footer"><nav class="footer-links" aria-label="Footer navigation"><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></nav><p>© 2026 Daily Riddle Words</p></footer>
+</body>
+</html>

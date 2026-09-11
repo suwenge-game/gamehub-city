@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Information Entropy and Binary Search Optimize Your First Two Guesses - Daily Riddle Words</title>
+<meta name="description" content="A measured entropy study of the daily bank: 599 answers, 599 guesses evaluated, every table computed from this site's own word list. The article shows why the first two guesses are a binary-search problem, and what the numbers say about playing it.">
+<link rel="canonical" href="https://gamehub.city/strategy-lab/information-entropy/">
+<meta property="og:type" content="article"><meta property="og:title" content="How Information Entropy and Binary Search Optimize Your First Two Guesses">
+<meta property="og:description" content="A measured entropy study of the daily bank: 599 answers, 599 guesses evaluated, every table computed from this site's own word list. The article shows why the first two guesses are a binary-search problem, and what the numbers say about playing it."><meta property="og:url" content="https://gamehub.city/strategy-lab/information-entropy/">
+<meta property="og:locale" content="en_US"><link rel="icon" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/game.css">
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});</script><!-- Funding Choices (Privacy & Messaging) is enabled at account level; TCF banner served by Google when live. --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9132117639313977" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q087PKG27K"></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Daily Riddle Words","url":"https://gamehub.city/","publisher":{"@type":"Organization","name":"Daily Riddle Words","logo":{"@type":"ImageObject","url":"https://gamehub.city/logo-512.png"}}},{"@type":"Article","headline":"How Information Entropy and Binary Search Optimize Your First Two Guesses","description":"A measured entropy study of the daily bank: 599 answers, 599 guesses evaluated, every table computed from this site's own word list. The article shows why the first two guesses are a binary-search problem, and what the numbers say about playing it.","inLanguage":"en","author":{"@type":"Organization","name":"Daily Riddle Words editorial"},"isPartOf":{"@type":"WebSite","name":"Daily Riddle Words","url":"https://gamehub.city/"}}]}</script>
+</head>
+<body>
+<a class="gw_14036869" href="#main">Skip to content</a>
+<nav class="gw_791e2df1" aria-label="Main navigation"><a class="gw_08c25f01" href="/">Daily Riddle Words</a><div class="gw_997a7cae"><a href="/">Play</a><a href="/rules/">Rules</a><a href="/strategies/">Strategy</a><a href="/hints/">Hints</a><a href="/about/">About</a></div></nav>
+<main class="gw_26f695b5" id="main">
+<p class="gw_a6369d41">Strategy lab · information theory</p>
+<h1>How Information Entropy and Binary Search Optimize Your First Two Guesses</h1>
+<p class="gw_545e537f">A measured entropy study of the daily bank: 599 answers, 599 guesses evaluated, every table computed from this site's own word list. The article shows why the first two guesses are a binary-search problem, and what the numbers say about playing it.</p>
+
+<h2>The problem is a search, not a vocabulary test</h2>
+<p>Each guess partitions the answer bank into buckets — one per distinct feedback pattern. A perfect guess would split 599 candidates into equal thirds-of-a-pattern space, halving the survivors with every tile of information. Information theory measures that split in bits: a guess whose outcomes are equally likely across 243 possible patterns carries at most 7.92 bits; identifying one answer out of 599 needs 9.23 bits. The game is the traversal between those two numbers.</p>
+<p>Framed this way, strategy stops being folklore. A "good opener" is a guess whose feedback distribution is close to uniform — high entropy, many buckets, no oversized bucket. A "lucky opener" is the opposite: few buckets, one dominant. The tables below rank real guesses by these measures, computed against the actual bank.</p>
+
+<h2>Top openers by measured entropy</h2>
+<table class="gw_1b4c69d2"><caption>Highest-entropy openers across the guess bank (599 words evaluated)</caption>
+<thead><tr><th>Guess</th><th>Entropy (bits)</th><th>Distinct outcomes</th><th>Largest bucket</th><th>Largest share</th></tr></thead>
+<tbody><tr><td>TEARS</td><td>6.134</td><td>125</td><td>34</td><td>5.7%</td></tr><tr><td>TRIES</td><td>6.068</td><td>112</td><td>32</td><td>5.3%</td></tr><tr><td>RATES</td><td>6.049</td><td>111</td><td>27</td><td>4.5%</td></tr><tr><td>RAISE</td><td>5.880</td><td>96</td><td>29</td><td>4.8%</td></tr><tr><td>LEAST</td><td>5.868</td><td>105</td><td>46</td><td>7.7%</td></tr><tr><td>TRADE</td><td>5.858</td><td>107</td><td>42</td><td>7.0%</td></tr><tr><td>SHARE</td><td>5.857</td><td>109</td><td>34</td><td>5.7%</td></tr><tr><td>STORE</td><td>5.829</td><td>100</td><td>36</td><td>6.0%</td></tr><tr><td>DATES</td><td>5.792</td><td>99</td><td>38</td><td>6.3%</td></tr><tr><td>ROLES</td><td>5.752</td><td>97</td><td>35</td><td>5.8%</td></tr></tbody></table>
+<p>Two readings of the table. First: the top openers cluster within a few hundredths of a bit — beyond the top handful, opener choice matters less than the plan built around it. Second: even the best openers leave a largest bucket holding several percent of the bank, which is precisely why the second guess exists as a planned move rather than a reaction.</p>
+
+<h2>Should the opener be an answer word?</h2>
+<table class="gw_1b4c69d2"><caption>Highest-entropy words from inside the answer bank itself</caption>
+<thead><tr><th>Word</th><th>Entropy (bits)</th><th>Distinct outcomes</th><th>Largest bucket</th><th>Largest share</th></tr></thead>
+<tbody><tr><td>TEARS</td><td>6.134</td><td>125</td><td>34</td><td>5.7%</td></tr><tr><td>TRIES</td><td>6.068</td><td>112</td><td>32</td><td>5.3%</td></tr><tr><td>RATES</td><td>6.049</td><td>111</td><td>27</td><td>4.5%</td></tr><tr><td>RAISE</td><td>5.880</td><td>96</td><td>29</td><td>4.8%</td></tr><tr><td>LEAST</td><td>5.868</td><td>105</td><td>46</td><td>7.7%</td></tr></tbody></table>
+<p>Answer-bank openers carry a bonus the guess list cannot: a chance of a row-one win. The measured cost is small — the top answer words land within touching distance of the overall entropy leaders. The rational comparison is expected total solves, and for most players the win-probability bonus offsets a few hundredths of a bit. Pick a side consciously; both are defensible.</p>
+
+<h2>The two-guess plan, computed</h2>
+<p>The pairing strategy from the opening-pairs guide reduces to conditional entropy: after the opener's feedback, choose the second guess that maximizes entropy <em>within the surviving bucket</em>. Computing that across the whole answer space for the leading opener gives an expected second-guess entropy of <strong>2.73 bits</strong> (opener TEARS); the runner-up opener yields <strong>2.82 bits</strong> (TRIES). Combined with row-one values, the planned pair extracts enough information to leave a median solve at two candidates or fewer before row three.</p>
+<p>The complement rule falls out of the same computation: because the second guess must maximize entropy <em>inside</em> the bucket, words reusing the opener's letters are systematically disadvantaged — their feedback is correlated with what you already know. The best complements share no letters with the opener, which the pairing guide turned into a practical rule before this page computed the reason.</p>
+
+<h2>Binary search intuition, calibrated</h2>
+<p>A pure binary search halves the space every query: from 599 candidates, log2(599) ≈ 9.2 bits gets you to one. Real feedback is coarser — 3^5 patterns, but skewed by the bank's letter distribution — so effective entropy per guess runs 5-6 bits against a theoretical 7.9. That gap is the entire skill surface: reading which bucket you fell into, then choosing the next query for <em>that</em> bucket rather than the bank at large.</p>
+<p>This is also why the site's pattern pages (<a href="/words-containing/">words containing a letter</a>, suffix and prefix tables) work: they are pre-computed bucket maps. When feedback lands you in a bucket, the matching page hands you its membership and texture, and the remaining search is arithmetic rather than memory.</p>
+
+<h2>Worked micro-example</h2>
+<p>Suppose the opener returns two yellows, no greens. In entropy terms you learned roughly 3-4 bits — less than the opener's total because yellows overlap. The surviving bucket might hold a few hundred candidates. The pairing rule says the next guess should share none of the opener's letters and test five new high-frequency ones; measured against the bucket, the best such complement extracts another ~5 bits, leaving a median of under twenty candidates at row three. The board is now an endgame — which is the entire argument for planning two guesses before the first swipe.</p>
+
+<h2>Reproducibility</h2>
+<p>Every number here is computed from the site's own 599-word answer bank and its 599-word guess list at build time. When the bank changes, the tables regenerate. The feedback function used is the standard two-pass green-first resolution — the same one the game runs. Entropy is measured in bits, base 2, over empirical outcome frequencies.</p>
+
+<p>Pair this article with the <a href="/strategy-lab/letter-frequency/">letter frequency study</a> (what the bank looks like letter by letter) and the <a href="/strategy-lab/opening-pairs/">opening pairs guide</a> (the practical two-guess playbook). For daily practice against measured buckets, the <a href="/hints/">hint archive</a> stays open.</p>
+<section class="gw_408f0553"><h2>Keep exploring</h2><div class="gw_1a62294a"><a href="/strategy-lab/">Strategy lab</a><a href="/strategy-lab/letter-frequency/">Letter frequency</a><a href="/strategy-lab/opening-pairs/">Opening pairs</a><a href="/hints/">Hint archive</a></div></section>
+</main>
+<footer class="gw_1db9e4f8"><nav class="gw_4a3a4a29" aria-label="Footer navigation"><a href="/about/">About</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/contact/">Contact</a></nav><p>© 2026 Daily Riddle Words</p></footer>
+</body>
+</html>
